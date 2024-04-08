@@ -1,0 +1,125 @@
+ 
+.testimonial-header {
+    text-align: center;  
+    margin-bottom: 10px;  
+    margin-top: 60px;
+}
+
+.testimonial-header h6,
+.testimonial-header h3 {
+    margin: 0;
+
+}
+
+@media screen and (min-width: 576px) {
+    .testimonial-header {
+        text-align: left;  
+    }
+}
+
+.testimonial-container {
+    display: flex;
+     
+    justify-content: center;  
+    align-items: flex-start;  
+
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.testimonial-card {
+    width: calc(33.33% - 20px);  
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    margin: 10px;
+    overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+    .testimonial-card {
+        width: calc(50% - 20px);  
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial-card {
+        width: calc(100% - 20px);  
+    }
+}
+
+
+.testimonial-card-content {
+    padding: 30px;
+}
+
+.testimonial-card-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-card-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-card-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-card-author-info {
+    flex-grow: 1;
+}
+
+.testimonial-card-author-name {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-card-author-designation {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+    .testimonial-card {
+        width: calc(100% - 40px);  
+    }
+
+    .testimonial-card-content {
+        padding: 20px;
+    }
+
+    .testimonial-card-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card-author {
+        padding-top: 30px;
+        flex-direction: row;
+        align-items: center;  
+    }
+
+    .testimonial-card-avatar {
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card-author-name {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-card-author-designation {
+        font-size: 14px;
+    }
+}

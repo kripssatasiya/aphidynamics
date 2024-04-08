@@ -1,0 +1,106 @@
+/* Footer Container */
+.footer {
+    background-color:  aliceblue;  
+    padding: 10px 0;  
+    color: black;  
+}
+
+/* Footer Row */
+.row-footer {
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+}
+
+#ok{
+    text-decoration: none;
+}
+
+#ok2{
+    text-decoration: none;
+}
+
+/* Footer Column */
+.col-md-4-footer {
+    margin-bottom: 30px;  
+    text-align: center;  
+    
+}
+.col-md-4-footer-two {
+   
+    margin-bottom: 30px;  
+    text-align: left;  
+}
+.col-md-4-footer-three {
+   
+    padding-left: 40px;
+    margin-bottom: 30px;  
+    text-align: left;  
+}
+.col-md-4-footer-two a, .col-md-4-footer-three a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.col-md-4-footer h6{
+    text-align: center;
+}
+
+/* Footer Brand */
+.navbar-brand-footer {
+    display: block;  
+    margin-bottom: 10px;  
+    text-decoration: none;  
+    color: black;  
+    font-size: 26px;  
+  
+}
+
+.navbar-brand-footer img {
+    width: 60px; /* Image width */
+}
+
+/* Footer Paragraph */
+.row-footer p {
+    margin-bottom: 30px;  
+}
+
+/* Footer Heading */
+.row-footer h3 {
+    font-size: 22px;  
+    margin-bottom: 20px;  
+}
+
+/* Footer List */
+.row-footer ul {
+    list-style: none;  
+    padding: 0;   
+}
+
+/* Footer List Item */
+.row-footer ul li {
+    margin-bottom: 10px;  
+}
+
+/* Footer Icon Container */
+.footericon {
+    margin-top: 20px;  
+}
+
+/* Footer Icon */
+.footericon i {
+    font-size: 24px;  
+    margin: 0 10px;  
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .col-md-4-footer {
+        flex: 0 0 100%;  
+    }
+    .col-md-4-footer-three {
+        padding-right: 40px;
+    }
+}
+    

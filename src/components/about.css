@@ -1,0 +1,223 @@
+
+/* About Container */
+.about {
+    padding: 50px 15px;  
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;  
+}
+
+/* Jumbotron styles */
+.jumbotron-about {
+    background-color: white;  
+    border-radius: 20px;  
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  
+    animation: fadeInUp 1s ease , slideInFromLeft 1s ease;  
+}
+
+
+/* Title styles */
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+.display-4 {
+    text-align: center;
+}
+
+/* Subtitle styles */
+.jumbotron-about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.jumbotron-about span {
+    background: linear-gradient(#00BCD4, #03a9f4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 2s infinite alternate;
+}
+/* Image styles */
+.aboutimg {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    animation: slideInLeft 1s ease;  
+}
+
+/* Button styles */
+.btn-primary {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;  
+    animation: fadeInUp 1s ease;  
+}
+
+.btn-primary:hover {
+    background-color: #0b6d6d;  
+    border-color: #0b6d6d;  
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* @keyframes rotateIn {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #00BCD4;
+    }
+    100% {
+        color: #03a9f4;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .jumbotron-about {
+        padding: 20px;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .aboutimg {
+        margin-top: 15px;
+    }
+    .container-about{
+        padding-left: 10px;
+    }
+}
+
+   .additional-content-about {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }
+  
+  .additional-content-about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .additional-content-about .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .additional-content-about .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .additional-content-about .card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .additional-content-about .card p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Change the animation color here */
+  @keyframes cardAnimation {
+    0% {
+      background-color: pink; /* Red color */
+    }
+    50% {
+      background-color: aliceblue; /* Orange color */
+    }
+    100% {
+      background-color: #0b6d6d; /* Blue color */
+    }
+  }
+  
+  .additional-content-about .card:hover {
+    animation: cardAnimation 2s ease-in-out infinite alternate; /* Apply the animation */
+  }
+  
+  @media (max-width: 768px) {
+    .additional-content-about .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .additional-content-about .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

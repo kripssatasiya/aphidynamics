@@ -1,0 +1,76 @@
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+/* Service Container */
+.service {
+  margin-bottom: 50px;
+  width: calc(50% - 20px);  
+  margin-right: 20px;  
+}
+
+/* Float every second item to the right */
+.service:nth-child(even) {
+  float: right;
+}
+
+  
+  /* Service Title */
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Service Description */
+  .service p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Service Images */
+  .service img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Service Image Hover Effect */
+  .service img:hover {
+    transform: scale(1.08);
+  }
+  
+  /* Animation for Portfolio Section */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply Animation to Services */
+  .service {
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+   
+  .service {
+      width: 90%;  
+      margin-right: 0;  
+      align-items: center;
+  }
+}

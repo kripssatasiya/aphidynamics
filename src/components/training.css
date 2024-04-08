@@ -1,0 +1,145 @@
+/* Slide transition effects */
+.carousel-item {
+    transition: transform 0.5s ease;  
+}
+
+/* First slide effect */
+.carousel-item:nth-child(1) {
+    animation: trendyFadeIn 2s ease-out;
+}
+
+/* Second slide effect */
+.carousel-item:nth-child(2) {
+    animation: scaleIn 1s ease;  
+}
+
+/* Third slide effect */
+.carousel-item:nth-child(3) {
+    animation: skewIn 1s ease;  
+}
+
+/* Fourth slide effect */
+.carousel-item:nth-child(4) {
+    animation: slideInFromBottom 1s ease;  
+}
+
+/* Fifth slide effect */
+.carousel-item:nth-child(5) {
+    animation: bounceIn 1s ease;  
+}
+
+/* Sixth slide effect */
+.carousel-item:nth-child(6) {
+    animation: flipInX 1s ease; 
+}
+
+@keyframes trendyFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Scale-in animation */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Skew-in animation */
+@keyframes skewIn {
+    0% {
+        transform: skewX(-30deg) translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: skewX(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-in from bottom animation */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce-in animation */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-500px) scaleY(2);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(0) scaleY(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+/* Flip-in animation */
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: perspective(400px) rotateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    
+    /* First slide effect */
+    .carousel-item:nth-child(1) {
+        animation: fadeInOut 1s ease;  
+    }
+
+    /* Second slide effect */
+    .carousel-item:nth-child(2) {
+        animation: scaleIn 1s ease;  
+    }
+
+    /* Third slide effect */
+    .carousel-item:nth-child(3) {
+        animation: skewIn 1s ease;  
+    }
+
+    /* Fourth slide effect */
+    .carousel-item:nth-child(4) {
+        animation: slideInFromBottom 1s ease;  
+    }
+
+    /* Fifth slide effect */
+    .carousel-item:nth-child(5) {
+        animation: bounceIn 1s ease;  
+    }
+
+    /* Sixth slide effect */
+    .carousel-item:nth-child(6) {
+        animation: flipInX 1s ease;  
+    }
+   
+    .carousel-item{
+        padding-left: 10px;
+    }
+}

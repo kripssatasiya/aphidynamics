@@ -1,0 +1,159 @@
+
+  /* Navbar */
+  .navbar {
+    background-color: #ffffff;  
+  }
+  
+  .navbar-brand img {
+    max-width: 100px;  
+    height: auto;
+  }
+  
+  .navbar-brand {
+    margin-right: 20px;  
+  }
+  
+  .navbar-brand h5 {
+    margin: 0;  
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;  
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333333;  
+  }
+   
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 991.98px) {
+    .navbar-brand {
+      margin-right: 0;  
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 0;  
+      margin-bottom: 5px; 
+    }
+  
+    .navbar-toggle {
+      margin-right: 15px; 
+    }
+  }
+  
+  
+  /* Navbar Toggle Button */
+  .navbar-toggle {
+    border: none;  
+    background: none;  
+    padding: 10px 15px;  
+    cursor: pointer; 
+    display: block;  
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: #333;  
+    height: 3px;  
+    width: 25px;  
+    display: block;  
+    margin-top: 5px;  
+  }
+  
+  /* Navbar Content - Initially Hidden */
+  .navbar-collapse {
+    display: none;  
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 991.98px) {
+    .navbar-toggle {
+      margin-right: 15px;  
+    }
+  
+    .navbar-collapse {
+      display: block;  
+    }
+  }
+  
+
+  /* Navbar */
+.navbar {
+  background-color: white;  
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;  
+  align-items: center;  
+}
+
+.navbar-brand img {
+  max-width: 100px; 
+  height: auto;
+  margin-right: 10px;
+  padding-top: 0px;  
+}
+
+.brand-name {
+  font-size: 20px; 
+}
+ 
+.brand-name h6{
+  font-size: 8px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;  
+  outline: none;
+  padding: 0rem 0.75rem;
+}
+
+
+.navbar-toggler-icon {
+  display: inline-block;  
+  width: 1.5em;  
+  height: 1.0em;  
+  vertical-align: end;  
+}
+
+ 
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 35px; 
+  border-radius: 80px;  
+  transition: background-color 0.3s ease;  
+}
+.nav-link:hover{
+  background-color: #0b6d6d; /* Change background color on hover */
+  border-color: #0b6d6d;
+  color:  white ! important;
+    
+   
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+      font-size: 15px;  
+      padding: 5px 0px;  
+      margin: 0;
+  }
+   
+  .navbar-nav .nav-link {
+    display: block;
+
+    padding: 10px 20px; /* Adjust padding */
+    text-align: left; /* Center-align the text */
+  }
+
+  .navbar-nav .nav-item.active .nav-link {
+    background-color: #0b6d6d; /* Change background color of active link */
+    border-color: #0b6d6d;
+    color: white; /* Change text color of active link */
+    border-radius: 0; /* Remove border-radius */
+  }
+ 
+}
